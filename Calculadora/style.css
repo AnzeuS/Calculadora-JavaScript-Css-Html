@@ -1,0 +1,143 @@
+/* Colores que se utilizaran en al calculadora */
+:root{
+    --color-fondo: #aaaaaa;
+    --cuerpo-calculadora: #4E5166;
+    --linea-calculadora: #7c90a0;
+}
+
+
+
+/* Estructura basica de la calculadora */
+body{
+    margin: 0px;
+    background-color: var(--color-fondo);
+    font-family: monospace;
+}
+.cal{
+    display: flex;
+    justify-content: center;
+}
+.espaciador{
+    margin: 20px;
+}
+.contenedor-calculadora{
+    display: grid;
+    grid-template-rows: repeat(7, auto);
+    grid-template-columns: repeat(6, auto);
+    gap: 20px;
+    min-width: 15em;
+    max-width: 45em;
+    background-color: var(--linea-calculadora);
+    border-radius: 1em;
+}
+/* Pantalla */
+.pantalla-calculadora{
+    display: grid;
+    margin-top: 20px;
+    grid-column: 2/6;
+    grid-row: 1/2;
+}
+/* Estilo a la pantalla */
+.pantalla{
+    height: 2.5em;
+    border-radius: 0.5em;
+    background-color: #dddddd;
+}
+/* Estructura botones */
+.numero-calculadora{
+    margin: 1em;
+}
+.numero-9{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 3/4;
+}
+.numero-8{
+    display: grid;
+    grid-column: 3/3;
+    grid-row: 3/4;
+}
+.numero-7{
+    display: grid;
+    grid-column: 4/4;
+    grid-row: 3/4;
+}
+.numero-6{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 4/5;
+}
+.numero-5{
+    display: grid;
+    grid-column: 3/3;
+    grid-row: 4/5;
+}
+.numero-4{
+    display: grid;
+    grid-column: 4/4;
+    grid-row: 4/5;
+}
+.numero-3{
+    display: grid;
+    grid-column: 2/2;
+    grid-row: 5/6;
+}
+.numero-2{
+    display: grid;
+    grid-column: 3/3;
+    grid-row: 5/6;
+}
+.numero-1{
+    display: grid;
+    grid-column: 4/4;
+    grid-row: 5/6;
+}
+.numero-0{
+    display: grid;
+    grid-column: 3/3;
+    grid-row: 6/7;
+}
+.operador-mult{
+    display: grid;
+    grid-column: 5/5;
+    grid-row: 3/4;
+}
+.operador-div{
+    display: grid;
+    grid-column: 5/5;
+    grid-row: 4/5;
+}
+.operador-sum{
+    display: grid;
+    grid-column: 5/5;
+    grid-row: 5/6;
+}
+.operador-rest{
+    display: grid;
+    grid-column: 5/5;
+    grid-row: 6/7;
+}
+.operador-ig{
+    display: grid;
+    grid-column: 4/5;
+    grid-row: 6/7;
+}
+.operador-bo{
+    display: grid;
+    grid-column: 5/5;
+    grid-row: 2/3;
+}
+/* Estilo botones */
+button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 3em;
+    height: 3em;
+    border-radius: 50%;
+    border: 0;
+    -webkit-box-shadow: 0px 0px 300px -42px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 0px 300px -42px rgba(0,0,0,0.75);
+box-shadow: 0px 0px 300px -42px rgba(0,0,0,0.75);
+}
